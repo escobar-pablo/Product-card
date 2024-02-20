@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: greenyellow;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all-product {
+    display: flex;
+}
+
+.product-img {
+    background-image: url('https://i.ibb.co/GTSQ5DL/image-product-desktop.jpg');
+    /* height: 100vh; */
+    width: 20rem;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+    
+}
+
+.right-prod {
+    background: hsl(0, 0%, 100%);
+    width: 20rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-top-right-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+}
+
+.perfume {
+    margin-bottom: 1rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume-type{
+
+font-family: 'Fraunces', serif;
+}
+
+.perfume-description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    color: hsl(228, 12%, 40%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price-tag {
+    display: flex;
+    gap: 1rem;
+}
+
+.price-one {
+    font-size: 2rem;
+    color: hsl(158, 20%, 50%);
+    font-family: 'Fraunces', serif;
+}
+
+
+
+.price-two {
+    text-decoration: line-through;
+    margin-top: 0.0rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.cart-btn {
+    width: 100%;
+    padding-top: 0.8rem;
+    /* padding-right: 0.8rem; */
+    padding-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    background-color: hsl(158, 20%, 50%);
+    border:hsl(158, 20%, 50%);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    
+
+}
+
+/* Cart Icons */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+.img-cl{
+    padding-right: 10px;
+    position: absolute;
+    display: grid;
+    margin-left: -35px;
+}
+
+.cart-btn:hover {
+    background-color: red;
+}
+
+/* This section of the css code is for responsiveness of screens with maximum width of 600 */
+@media screen and (max-width:600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    body {
+        background: whitesmoke;
+        width: 100%;
+        display: grid;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .right-prod {
+        background: hsl(0, 0%, 100%);
+        width: 20rem;
+        margin-bottom: 3.5rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.9rem;
+        border-bottom-left-radius: 0.9rem;
+    }
+
+    .all-product {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        padding-right: 25px;
+        
+    }
+
+    .product-img {
+        
+        background-image: url("https://i.ibb.co/r3GRKBd/image-product-mobile.jpg");
+        /* height: 100vh; */
+        width: 20rem;
+        background-size: cover;
+        background-position: center;
+        border-top-right-radius: 0.9rem;
+        border-top-left-radius: 0.9rem;
+        border-bottom-left-radius: 0;
+        margin-top: 3.5rem;
+        
+    }
+
+}

@@ -1,0 +1,28 @@
+body {
+    background: aqua;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr  1fr; */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.felx-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
